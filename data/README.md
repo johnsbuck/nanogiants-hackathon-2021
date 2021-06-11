@@ -7,17 +7,16 @@ This document exists to list the location of each dataset as well as how they ar
 ## Directory Structure
 The directory structure is described below:
 
-    .
-    +-- data/
-    |   +-- amazon/
-    |   |   +-- test.ft.txt
-    |   |   +-- train.ft.txt
-    |   +-- facebook/
-    |   |   +-- Test.csv
-    |   |   +-- Train.csv
-    |   +-- twitter/
-    |   |   +-- Twiter_Data.csv
-    |   +-- README.md
+    data/
+    +-- amazon/
+    |   +-- test.ft.txt
+    |   +-- train.ft.txt
+    +-- facebook/
+    |   +-- Test.csv
+    |   +-- Train.csv
+    +-- twitter/
+    |   +-- Twiter_Data.csv
+    +-- README.md
     
 Each sub-folder had data collected from one dataset listed below:
 
