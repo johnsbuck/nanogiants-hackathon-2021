@@ -21,6 +21,13 @@ def format_data(data):
     wnl = WordNetLemmatizer()
     for i in range(1, len(data)):
         tokens = nltk.word_tokenize(data[i][1])
+        k = 0
+        while k < len(tokens):
+            if not tokens[k].isalnum():
+                del tokens[k]
+            else:
+                k += 1
+
         data[i][1] = tokens
     return data
 
