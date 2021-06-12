@@ -19,6 +19,8 @@ The directory structure is described below:
     |   +-- googleplaystore_user_reviews.csv
     +-- twitter/
     |   +-- Twiter_Data.csv
+    +-- steam/
+    |   +-- steam_reviews.csv
     +-- README.md
     
 Each sub-folder had data collected from one dataset listed below:
@@ -31,3 +33,5 @@ Each sub-folder had data collected from one dataset listed below:
     - https://www.kaggle.com/lava18/google-play-store-apps
 4. twitter/
     - https://www.kaggle.com/saurabhshahane/twitter-sentiment-dataset
+5. steam/
+    - https://www.kaggle.com/tamber/steam-video-games
