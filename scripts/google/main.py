@@ -4,6 +4,7 @@ import re
 import nltk
 from nltk.stem import WordNetLemmatizer
 
+import extraction.FeatureExtractor
 
 def get_data(file):
     data = []
@@ -105,3 +106,5 @@ with open("../../data/google/app_user_reviews.json", "w", encoding="utf-8") as o
     json.dump(make_data_app_dict(data), outfile)
 with open("../../data/google/user_reviews.json", "w", encoding="utf-8") as outfile:
     json.dump(data, outfile)
+
+extraction.FeatureExtractor.extract_features("../../data/google/user_reviews.json")
