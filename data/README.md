@@ -14,6 +14,9 @@ The directory structure is described below:
     +-- facebook/
     |   +-- Test.csv
     |   +-- Train.csv
+    +-- google/
+    |   +-- googleplaystore.csv
+    |   +-- googleplaystore_user_reviews.csv
     +-- twitter/
     |   +-- Twiter_Data.csv
     +-- README.md
@@ -24,5 +27,7 @@ Each sub-folder had data collected from one dataset listed below:
     - https://www.kaggle.com/bittlingmayer/amazonreviews
 2. facebook/
     - https://www.kaggle.com/alifarsi/facebook-keyword-extraction-competition
-3. twitter/
+3. google/
+    - https://www.kaggle.com/lava18/google-play-store-apps
+4. twitter/
     - https://www.kaggle.com/saurabhshahane/twitter-sentiment-dataset
