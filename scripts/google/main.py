@@ -4,7 +4,6 @@ import re
 import nltk
 from nltk.stem import WordNetLemmatizer
 
-import extraction.FeatureExtractor
 
 def get_data(file):
     data = []
@@ -95,42 +94,14 @@ nltk.download("punkt")
 nltk.download("wordnet")
 nltk.download('averaged_perceptron_tagger')
 
-# print("Obtaining Data")
-# data = get_data("../../data/google/googleplaystore_user_reviews.csv")
-#
-# print("Formatting Data")
-# data = format_data(data)
-#
-# print("Saving Data")
-# with open("../../data/google/app_user_reviews.json", "w", encoding="utf-8") as outfile:
-#     json.dump(make_data_app_dict(data), outfile)
-# with open("../../data/google/user_reviews.json", "w", encoding="utf-8") as outfile:
-#     json.dump(data, outfile)
+print("Obtaining Data")
+data = get_data("../../data/google/googleplaystore_user_reviews.csv")
 
+print("Formatting Data")
+data = format_data(data)
 
-
-num = 1
-
-# review_json_dict = {}
-# with open("../../data/google/app_user_reviews.json") as review_file:
-#     review_json_dict = json.load(review_file)
-#
-# review_words = []
-# for review in review_json_dict[list(review_json_dict)[num]]:
-#     review_words.append(" ".join(review[0]))
-#
-# extraction.FeatureExtractor.extract_features(review_words)
-#
-# print(list(review_json_dict)[num])
-
-review_json_dict = {}
-with open("../../data/steam/game_steam_reviews.json") as review_file:
-    review_json_dict = json.load(review_file)
-
-review_words = []
-for review in review_json_dict[list(review_json_dict)[num]]:
-    review_words.append(" ".join(review[-1]))
-
-extraction.FeatureExtractor.extract_features(review_words)
-
-print(list(review_json_dict)[num])
+print("Saving Data")
+with open("../../data/google/app_user_reviews.json", "w", encoding="utf-8") as outfile:
+    json.dump(make_data_app_dict(data), outfile)
+with open("../../data/google/user_reviews.json", "w", encoding="utf-8") as outfile:
+    json.dump(data, outfile)
